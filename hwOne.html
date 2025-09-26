@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+</tr>
+
+
+<tr>
+<td class="td1"><label for="history">Have you ever had:</label></td>
+<td>
+<input type="checkbox" id="hx1" name="history" value="Chicken Pox"> <label for="hx1" class="inline">Chicken Pox</label>
+<input type="checkbox" id="hx2" name="history" value="Measles"> <label for="hx2" class="inline">Measles</label>
+<input type="checkbox" id="hx3" name="history" value="Mumps"> <label for="hx3" class="inline">Mumps</label>
+<input type="checkbox" id="hx4" name="history" value="Diabetes"> <label for="hx4" class="inline">Diabetes</label>
+</td>
+</tr>
+
+
+<tr>
+<td class="td1"><label for="notes">Additional Notes:</label></td>
+<td>
+<textarea id="notes" name="notes" rows="4" cols="35" placeholder="Enter any additional medical history or concerns here..."></textarea>
+</td>
+</tr>
+
+
+<tr>
+<td class="td1"><label for="range">How is your health?<br>(Rate from 1 to 10)</label></td>
+<td>
+<input type="range" name="range" id="range" min="1" max="10" value="5" />
+<span id="range-slider">5</span>
+</td>
+</tr>
+
+
+<!-- Portal Account Setup -->
+<tr>
+<th colspan="4">Portal Account Setup</th>
+</tr>
+
+
+<tr>
+<td class="td1"><label for="uid">User ID:</label></td>
+<td>
+<input type="text" name="uid" id="uid" maxlength="20" required title="Please enter a user ID:" placeholder="Your user ID" />
+</td>
+</tr>
+
+
+<tr>
+<td class="td1"><label for="pword">Password:</label></td>
+<td>
+<input type="password" name="pword" id="pword" minlength="10" required />
+</td>
+</tr>
+
+
+<tr>
+<td class="td1"><label for="pword2">Re-enter Password:</label></td>
+<td>
+<input type="password" name="pword2" id="pword2" minlength="10" required />
+</td>
+</tr>
+
+
+<!-- Submit/Reset -->
+<tr>
+<td colspan="4">
+<center>
+<input type="submit" name="submit" value="Submit" />
+<input type="reset" name="reset" value="Reset" />
+</center>
+</td>
+</tr>
+</table>
+</div>
+</center>
+</form>
+</main>
+
+
+<!-- Footer -->
+<footer>
+<p id="footer">&#169; Insert clinic name here | <a href="contact.html">Contact Us!</a></p>
+</footer>
+
+
+<!-- External JS -->
+<script src="hw1.js"></script> <!-- links to js file -->
+</body>
+</html>
