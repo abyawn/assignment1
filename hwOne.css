@@ -1,33 +1,59 @@
-/* Homework 1 CSS */
+/*
+  Name: Abyan Patnam
+  Date created: 09/20/2025
+  Date last edited: 09/26/2025
+  Version: 1
+  Description: Homework 1 CSS
+*/
 
+/* ---- base / colors / fonts ---- */
 :root{
   --maroon:#7b2c2c;
-  --panel:#d9d9d9;
-  --text:#222;
+  --panel:#e5e5e5;
+  --text:#1f1f1f;
   --muted:#555;
   --border:#c9c9c9;
-  --btn:#e6e6e6;
+  --btn:#f4f4f4;
+  --link:#0b5ed7;
+  --link-visited:#6a1b9a;
 }
 
-*{box-sizing:border-box}
-html,body{margin:0;padding:0;font-family:Georgia, "Times New Roman", Times, serif;color:var(--text);}
+html,body{
+  margin:0;
+  padding:0;
+  background:#faf9f7;            /* non-default background */
+  color:var(--text);
+  font-family: "Georgia", "Times New Roman", serif;  /* non-default body font */
+}
 
+/* ---- header banner ---- */
 .banner{
   background:var(--maroon);
   color:#fff;
   padding:28px 0 36px;
 }
 .banner__inner{
-  width:min(1000px, 94%);
+  width:min(1100px, 94%);
   margin:0 auto;
   position:relative;
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
 }
+.brand-left{
+  position:absolute;
+  left:0;
+  bottom:-6px;
+}
+.logo{ width:64px; height:auto; display:block; }
+
 .clinic-title{
   margin:0;
   text-align:center;
   font-size:44px;
-  font-weight:700;
+  font-weight:800;
   letter-spacing:.5px;
+  font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif; /* non-default heading font */
 }
 .today{
   position:absolute;
@@ -38,21 +64,25 @@ html,body{margin:0;padding:0;font-family:Georgia, "Times New Roman", Times, seri
   color:#ffe8e8;
 }
 
+/* ---- card / main panel ---- */
 .card{
-  width:min(1000px, 94%);
+  width:min(1100px, 94%);
   margin:28px auto;
   background:var(--panel);
   border:1px solid var(--border);
   padding:28px 24px 16px;
 }
 
+/* heading inside card */
 .section-title{
   text-align:center;
   font-size:24px;
   margin:4px 0 18px;
-  font-weight:700;
+  font-weight:800;
+  font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
 }
 
+/* ---- form table ---- */
 .form-table{
   width:100%;
   border-collapse:separate;
@@ -62,24 +92,27 @@ html,body{margin:0;padding:0;font-family:Georgia, "Times New Roman", Times, seri
   text-align:right;
   white-space:nowrap;
   color:#222;
-  width:140px;
+  width:150px;
   padding-right:8px;
 }
-.inline label{
-  margin-right:22px;
-}
+
+/* text inputs */
 input[type="text"],
 input[type="email"],
 input[type="password"],
-input[type="date"],
-select{
-  width:260px;
+select,
+textarea{
+  width:280px;
   padding:6px 8px;
   border:1px solid var(--border);
   border-radius:4px;
   background:#fff;
   font-family:inherit;
 }
+
+textarea{ resize:vertical; }
+
+.inline label{ margin-right:22px; }
 
 .slider-row{
   display:flex;
@@ -91,29 +124,46 @@ select{
   color:var(--muted);
 }
 
+/* ---- buttons ---- */
 .actions{
-  display:flex;
-  justify-content:center;
-  gap:18px;
-  margin:26px 0 4px;
+  text-align:center;
+  padding-top:8px;
 }
+input[type="reset"],
 input[type="submit"],
-input[type="reset"]{
+button{
   background:var(--btn);
   border:1px solid #bdbdbd;
   padding:6px 18px;
   border-radius:4px;
   cursor:pointer;
-  font-weight:600;
+  font-weight:700;
 }
+input[type="reset"]:hover,
 input[type="submit"]:hover,
-input[type="reset"]:hover{
-  filter:brightness(0.95);
-}
+button:hover{ filter:brightness(0.95); }
 
+/* ---- footer ---- */
 .footer{
-  text-align:center;
-  color:#333;
-  padding:10px 0 24px;
+  background:#f1efec;
+  border-top:1px solid var(--border);
+  padding:18px 0 28px;
 }
-.footer a{color:#0b5ed7;text-decoration:underline}
+.footer__inner{
+  width:min(1100px, 94%);
+  margin:0 auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:16px;
+}
+.footer__col{ font-size:14px; }
+.footer__links a{ margin:0 6px; }
+
+/* ---- links ---- */
+a{ color:var(--link); }
+a:visited{ color:var(--link-visited); }
+
+/* ---- id + attribute selector examples (to show selector skills) ---- */
+#uid { letter-spacing: .2px; }
+input[name="mi"] { text-transform:uppercase; }
