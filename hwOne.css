@@ -1,0 +1,119 @@
+/* Homework 1 CSS */
+
+:root{
+  --maroon:#7b2c2c;
+  --panel:#d9d9d9;
+  --text:#222;
+  --muted:#555;
+  --border:#c9c9c9;
+  --btn:#e6e6e6;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:Georgia, "Times New Roman", Times, serif;color:var(--text);}
+
+.banner{
+  background:var(--maroon);
+  color:#fff;
+  padding:28px 0 36px;
+}
+.banner__inner{
+  width:min(1000px, 94%);
+  margin:0 auto;
+  position:relative;
+}
+.clinic-title{
+  margin:0;
+  text-align:center;
+  font-size:44px;
+  font-weight:700;
+  letter-spacing:.5px;
+}
+.today{
+  position:absolute;
+  right:0;
+  bottom:-6px;
+  margin:0;
+  font-size:12px;
+  color:#ffe8e8;
+}
+
+.card{
+  width:min(1000px, 94%);
+  margin:28px auto;
+  background:var(--panel);
+  border:1px solid var(--border);
+  padding:28px 24px 16px;
+}
+
+.section-title{
+  text-align:center;
+  font-size:24px;
+  margin:4px 0 18px;
+  font-weight:700;
+}
+
+.form-table{
+  width:100%;
+  border-collapse:separate;
+  border-spacing:14px 12px;
+}
+.label{
+  text-align:right;
+  white-space:nowrap;
+  color:#222;
+  width:140px;
+  padding-right:8px;
+}
+.inline label{
+  margin-right:22px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select{
+  width:260px;
+  padding:6px 8px;
+  border:1px solid var(--border);
+  border-radius:4px;
+  background:#fff;
+  font-family:inherit;
+}
+
+.slider-row{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.slider-min,.slider-max{
+  font-size:12px;
+  color:var(--muted);
+}
+
+.actions{
+  display:flex;
+  justify-content:center;
+  gap:18px;
+  margin:26px 0 4px;
+}
+input[type="submit"],
+input[type="reset"]{
+  background:var(--btn);
+  border:1px solid #bdbdbd;
+  padding:6px 18px;
+  border-radius:4px;
+  cursor:pointer;
+  font-weight:600;
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover{
+  filter:brightness(0.95);
+}
+
+.footer{
+  text-align:center;
+  color:#333;
+  padding:10px 0 24px;
+}
+.footer a{color:#0b5ed7;text-decoration:underline}
