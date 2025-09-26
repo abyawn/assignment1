@@ -1,49 +1,51 @@
 <!DOCTYPE html>
 <!--
-Name: Abyan Patnam
-Date created: 9/20/2025
-Date last edited: 9/25/2026
-Version: 1
-Description: Homework 1 HTML
+  Program name: HW1 Thank You
+  Author: Abyan Patnam
+  Date created: 09/20/2025
+  Date last edited: 09/26/2025
+  Version: 1
+  Description: Homework 1 HTML (thank-you page)
 -->
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="stylesheet" href="hw1.css"> <!-- links to css file-->
-<title>Thank you! | Your title</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thank You — Patnam Health Clinic</title>
+  <link href="style.css" rel="stylesheet" />
 </head>
 <body>
-<header>
-<table width="100%">
-<tr>
-<td valign="top" align="left" width="20%">
-<div class="image">
-<img align="center" src="cliniclogo.png" alt="Houston Clinic Logo" width="70" id="logo"/>
-</div>
-</td>
-<td>
-<h2>Your clinic name</h2>
-</td>
-<td valign="bottom" align="right" width="20%">
-<p>Today's Date: <span id="today"></span></p>
-</td>
-</tr>
-</table>
-</header>
-<hr>
 
+  <header class="banner">
+    <div class="banner__inner">
+      <div class="brand-left">
+        <img src="cliniclogo.png" alt="Clinic Logo" class="logo" />
+      </div>
+      <h1 class="clinic-title">Patnam Health Clinic</h1>
+      <p class="today">today is: <span id="today"></span></p>
+    </div>
+  </header>
 
-<main>
-<h1>Thank you for creating your account!</h1>
-</main>
+  <main class="card thankyou">
+    <h2>Thank you for your submission.</h2>
+  </main>
 
+  <div class="footer">
+    <div class="footer__inner">
+      <div class="footer__col">
+        <strong>Patnam Health Clinic</strong><br>
+        PO BOX 18881<br>
+        Sugar Land, TX 77496
+      </div>
+      <div class="footer__col">
+        <button type="button" onclick="location.href='contact.html'">CONTACT US</button>
+      </div>
+      <div class="footer__col footer__links">
+        <a href="#">FB</a> · <a href="#">Twitter</a> · <a href="#">LinkedIn</a>
+      </div>
+    </div>
+  </div>
 
-<footer>
-<p id="footer">&#169; 2025 Your clinic name | <a href="insert.link.here" target="_blank" rel="noopener noreferrer">Contact Us!</a></p>
-</footer>
-
-
-<script src="hw1.js"></script>
+  <script src="hwOne.js"></script>
 </body>
 </html>
